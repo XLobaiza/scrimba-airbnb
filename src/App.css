@@ -25,3 +25,31 @@
   font-size: 16px;
   font-weight: 300;
 }
+
+.card{
+  max-width: 176px;
+  font-size: 12px;
+}
+.card > img {
+  width: 100%;
+}
+.event-type{
+  background-color: white;
+  color: black;
+  padding: 5px;
+  width: 60px;
+  border-radius: 2px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100px;
+  align-items: center;
+}
+.title > img {
+  width: 14px;
+}
+.review{
+  color: #918E9B;
+}

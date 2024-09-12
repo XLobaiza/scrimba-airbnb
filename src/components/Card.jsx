@@ -1,20 +1,20 @@
 import React from "react";
 
-export default function Card(){
+export default function Card({img, rating, reviewCount, country, title, price}){
     return(
         <div className="card">
             <p className="event-type">SOLD OUT</p>
-            <img src="src/assets/zaferesUSA.png"/>
+            <img src={img}/>
             <div className="card-content">
                 <div className="title">
                     <img src="src/assets/star.png"/>
-                    <span>5.0</span> 
+                    <span>{rating}</span> 
                     <div className="review">
-                        <span>(6)</span> <span>· USA </span>
+                        <span>({reviewCount})</span> <span>· {country} </span>
                     </div>
                 </div>
-                <p>Life lessons with Katie Zaferes</p>
-                <p><strong>From $136</strong> / person</p>
+                <p>{title}</p>
+                <p><strong>From ${price}</strong> / person</p>
             </div>
         </div>
     )

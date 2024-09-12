@@ -20,10 +20,13 @@
 
 .hero > h1 {
   font-size: 36px;
+  margin: 1px;
 }
 .hero > h2 {
   font-size: 16px;
   font-weight: 300;
+  margin: 1px;
+  max-width: 320px;
 }
 
 .card{
@@ -52,4 +55,7 @@
 }
 .review{
   color: #918E9B;
+}
+.card-content > p{
+  margin: 3px;
 }

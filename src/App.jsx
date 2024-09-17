@@ -9,14 +9,14 @@ function App() {
     <div>
       <Navbar />
       <Hero/>
-      <div>
+      <div className='carrousell'>
         <Card 
         img = "src/assets/zaferesUSA.png"
         rating = "5.0"
-        reviewCount = "6"
+        reviewCount = {6}
         country = "USA"
         title = "Life Lessons with Katie Zaferes"
-        price = "136"
+        price = {136}
         />
       </div>
     </div>

@@ -6,7 +6,7 @@ import Navbar from './components/navBar'
 import data from './data.js'
 
 function App() {
-  const experiencesOnline = data.map(item => { 
+  const cards = data.map(item => { 
     return <Card
         img = {item.coverImg}
         rating = {item.stats.rating}
@@ -23,7 +23,7 @@ function App() {
       <Navbar />
       <Hero/>
       <div className='carrousell'>
-        {experiencesOnline}
+        {cards}
       </div>
     </div>
   )

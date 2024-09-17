@@ -3,21 +3,27 @@ import './App.css'
 import Card from './components/Card'
 import Hero from './components/hero'
 import Navbar from './components/navBar'
+import data from './data.js'
 
 function App() {
+  const experiencesOnline = data.map(datas => { 
+    return <Card
+        img = {datas.coverImg}
+        rating = {datas.stats.rating}
+        reviewCount = {datas.stats.reviewCount}
+        location = {datas.location}
+        title = {datas.title}
+        price = {datas.price}
+        cost ={datas.const}
+      />
+   })
+
   return (
     <div>
       <Navbar />
       <Hero/>
       <div className='carrousell'>
-        <Card 
-        img = "src/assets/zaferesUSA.png"
-        rating = "5.0"
-        reviewCount = {6}
-        country = "USA"
-        title = "Life Lessons with Katie Zaferes"
-        price = {136}
-        />
+        {experiencesOnline}
       </div>
     </div>
   )

@@ -35,11 +35,20 @@
     flex: 0 0 auto;         /* ADD */
     display: flex;          /* ADD */
     flex-direction: column; /* ADD */
+    position: relative;
 }
 
 .card > img {
   width: 100%;
   border-radius: 8px;
+}
+.event-type {
+  position: absolute;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }
 
 .carrousell {

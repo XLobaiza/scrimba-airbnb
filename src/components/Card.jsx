@@ -1,9 +1,16 @@
 import React from "react";
 
-export default function Card({img, rating, reviewCount, location, title, price}){
+export default function Card({img, rating, reviewCount, location, title, price, openSpots})
+{ 
+    let badgeText
+    if (openSpots === 0) {
+        badgeText = "SOLD OUT"
+    } else if (location === "Online") {
+        badgeText = "ONLINE"
+    }
     return(
         <div className="card">
-            <p className="event-type">SOLD OUT</p>
+            {badgeText && <p className="event-type">{badgeText}</p>}
             <img src={img}/>
             <div className="card-content">
                 <div className="title">

@@ -4,7 +4,7 @@ export default function Card(props)
 { 
     let badgeText
     if (props.item.openSpots === 0) {
-        badgeText = "SOLD OUT"
+        badgeText = "Agotado"
     } else if (location === "Online") {
         badgeText = "ONLINE"
     }
